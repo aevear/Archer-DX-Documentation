@@ -1,0 +1,37 @@
+archerDX.utility package
+========================
+
+Submodules
+----------
+
+archerDX.utility.dataExport module
+----------------------------------
+
+.. automodule:: archerDX.utility.dataExport
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+archerDX.utility.dataImport module
+----------------------------------
+
+.. automodule:: archerDX.utility.dataImport
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+archerDX.utility.paths module
+-----------------------------
+
+.. automodule:: archerDX.utility.paths
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: archerDX.utility
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>archerDX.core package &mdash; Stonktastic 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="archerDX.testing package" href="archerDX.testing.html" />
+    <link rel="prev" title="archerDX package" href="archerDX.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Stonktastic
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="archerDX.html">archerDX package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">archerDX.core package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.core.coordinateAnnotationPairer">archerDX.core.coordinateAnnotationPairer module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.core.fastqSeqOver30">archerDX.core.fastqSeqOver30 module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.core.mostFreqSeq">archerDX.core.mostFreqSeq module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.core">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="archerDX.testing.html">archerDX.testing package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archerDX.utility.html">archerDX.utility package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testingMain.html">testingMain module</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Stonktastic</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="archerDX.html">archerDX package</a> &raquo;</li>
+        
+      <li>archerDX.core package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/archerDX.core.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="archerdx-core-package">
+<h1>archerDX.core package<a class="headerlink" href="#archerdx-core-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-archerDX.core.coordinateAnnotationPairer">
+<span id="archerdx-core-coordinateannotationpairer-module"></span><h2>archerDX.core.coordinateAnnotationPairer module<a class="headerlink" href="#module-archerDX.core.coordinateAnnotationPairer" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-coordinateAnnotationPairer"></span><dl class="simple">
+<dt>Notes :</dt><dd><ul class="simple">
+<li><dl class="simple">
+<dt>Input:</dt><dd><ul>
+<li><p>Tab-delimited file: Chr&lt;tab&gt;Position</p></li>
+<li><p>GTF formatted file with genome annotations.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Output:</dt><dd><ul>
+<li><p>Annotated file of gene name that input position overlaps.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Hint</dt><dd><ul>
+<li><p>Most of the sequence reads come from a small portion of the genome. Try to use this information to improve performance, if possible.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<dl class="py function">
+<dt id="archerDX.core.coordinateAnnotationPairer.coordinateAnnotationPairerMain">
+<code class="sig-prename descclassname">archerDX.core.coordinateAnnotationPairer.</code><code class="sig-name descname">coordinateAnnotationPairerMain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">coordinatePath</span></em>, <em class="sig-param"><span class="n">gtfPath</span></em>, <em class="sig-param"><span class="n">test</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.coordinateAnnotationPairer.coordinateAnnotationPairerMain" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>runs the main code, first calling to initailize the above class, the possibly filtering the dataset. After we combine the two dataframes and connect the chromosome and location to the gene name of that region.</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>coordinateDataPath (str): path to the coordinate data file. Would use pathlib but I am trying to limit external libraries as much as possible.</p></li>
+<li><p>GTFPath (str) : path to the the GTF file. Would use pathlib but I am trying to limit external libraries as much as possible.</p></li>
+<li><p>test (bool) : defaults to False, can be set to true in the testing scripts to disable print outs</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.coordinateAnnotationPairer.filterDataFrame">
+<code class="sig-prename descclassname">archerDX.core.coordinateAnnotationPairer.</code><code class="sig-name descname">filterDataFrame</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gtfData</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.coordinateAnnotationPairer.filterDataFrame" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description :</dt><dd><ul class="simple">
+<li><p>filters the data in GTF by the chromosome (SeqName) and Start hopefully to speed up processing time downstream.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>gtfData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>dataframe: GTF dataframe that has been sorted by Chromosome and start value</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.coordinateAnnotationPairer.filterDataFrameOutOfRange">
+<code class="sig-prename descclassname">archerDX.core.coordinateAnnotationPairer.</code><code class="sig-name descname">filterDataFrameOutOfRange</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">coordinateData</span></em>, <em class="sig-param"><span class="n">gtfData</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.coordinateAnnotationPairer.filterDataFrameOutOfRange" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description :</dt><dd><ul class="simple">
+<li><p>Filters data in the GTF frame based on the chromosomes in the coordinate data sheet</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>gtfData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>dataframe: GTF dataframe that has been sorted by Chromosome and start value</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.coordinateAnnotationPairer.pairGTFRowWithCoordinateFilter">
+<code class="sig-prename descclassname">archerDX.core.coordinateAnnotationPairer.</code><code class="sig-name descname">pairGTFRowWithCoordinateFilter</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gtfData</span></em>, <em class="sig-param"><span class="n">coordinateData</span></em>, <em class="sig-param"><span class="n">test</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.coordinateAnnotationPairer.pairGTFRowWithCoordinateFilter" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description :</dt><dd><ul class="simple">
+<li><p>Combines the Coordinate data sheet with the GTF sheet and generates the output with the gene name for each coordinate provided.</p></li>
+<li><p>Uses pandas filtering and takes the first option (if there is one)</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gtfData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p></li>
+<li><p><strong>coordinateData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p></li>
+<li><p><strong>test</strong> (<em>-</em>) – will print out values during real runs, not during test so that we can more clearly see if there are errors.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>dataframe: Coordinate data that has the “gene name” field populated from the GTF sheet</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.coordinateAnnotationPairer.pairGTFRowWithCoordinateFilterIterrows">
+<code class="sig-prename descclassname">archerDX.core.coordinateAnnotationPairer.</code><code class="sig-name descname">pairGTFRowWithCoordinateFilterIterrows</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gtfData</span></em>, <em class="sig-param"><span class="n">coordinateData</span></em>, <em class="sig-param"><span class="n">test</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.coordinateAnnotationPairer.pairGTFRowWithCoordinateFilterIterrows" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description :</dt><dd><ul class="simple">
+<li><p>Combines the Coordinate data sheet with the GTF sheet and generates the output with the gene name for each coordinate provided.</p></li>
+<li><p>Uses iterrows rather than the initial for loop</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gtfData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p></li>
+<li><p><strong>coordinateData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p></li>
+<li><p><strong>test</strong> (<em>-</em>) – will print out values during real runs, not during test so that we can more clearly see if there are errors.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>dataframe: Coordinate data that has the “gene name” field populated from the GTF sheet</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.coordinateAnnotationPairer.pairGTFRowWithCoordinateLoop">
+<code class="sig-prename descclassname">archerDX.core.coordinateAnnotationPairer.</code><code class="sig-name descname">pairGTFRowWithCoordinateLoop</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gtfData</span></em>, <em class="sig-param"><span class="n">coordinateData</span></em>, <em class="sig-param"><span class="n">test</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.coordinateAnnotationPairer.pairGTFRowWithCoordinateLoop" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description :</dt><dd><ul class="simple">
+<li><p>Combines the Coordinate data sheet with the GTF sheet and generates the output with the gene name for each coordinate provided.</p></li>
+<li><p>Uses multiple loops rather than a pandas filter</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gtfData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p></li>
+<li><p><strong>coordinateData</strong> (<em>-</em>) – Dataframe containing the information from the GTF file with headers set during import.</p></li>
+<li><p><strong>test</strong> (<em>-</em>) – will print out values during real runs, not during test so that we can more clearly see if there are errors.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p>dataframe: Coordinate data that has the “gene name” field populated from the GTF sheet</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-archerDX.core.fastqSeqOver30">
+<span id="archerdx-core-fastqseqover30-module"></span><h2>archerDX.core.fastqSeqOver30 module<a class="headerlink" href="#module-archerDX.core.fastqSeqOver30" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-fastqSeqOver30"></span><dl class="py function">
+<dt id="archerDX.core.fastqSeqOver30.fastqSeqOver30Main">
+<code class="sig-prename descclassname">archerDX.core.fastqSeqOver30.</code><code class="sig-name descname">fastqSeqOver30Main</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datapaths</span></em>, <em class="sig-param"><span class="n">test</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.fastqSeqOver30.fastqSeqOver30Main" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>Solves Part 1 of the project presented by Archer DX</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>datapaths (str): string with the location of the data intended to be processed in regards to part 1</p></li>
+<li><p>test (bool) (optional): If running the test suite, then denies print out of results. Also toggles different nameing schema for output file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.fastqSeqOver30.printOutReadStatistics">
+<code class="sig-prename descclassname">archerDX.core.fastqSeqOver30.</code><code class="sig-name descname">printOutReadStatistics</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fastqDic</span></em>, <em class="sig-param"><span class="n">test</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.fastqSeqOver30.printOutReadStatistics" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>End point of the code that takes in the dict key/pairs and prints out the read name/percentage &gt; 30</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>readFASTQDict</strong> (<em>dict</em>) – A key/pair dict with the read names as keys and a list of FASTQ rows as the value</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>prints out the project goals of the read name and the percentage of reads &gt; 30</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.fastqSeqOver30.recursiveFASTQDataExtract">
+<code class="sig-prename descclassname">archerDX.core.fastqSeqOver30.</code><code class="sig-name descname">recursiveFASTQDataExtract</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datapath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.fastqSeqOver30.recursiveFASTQDataExtract" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>Recursively looks for reads and reads them into a class. Each class is loaded into a list and tied to the read name in a dictonary</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fastqFilePath</strong> – a simple point reference to the location of the FASTQ files. Not complex/great but I wanted to use as few external libraries as possible</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dict: A key/pair dict with the read names as keys and a list of FASTQ rows as the value</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-archerDX.core.mostFreqSeq">
+<span id="archerdx-core-mostfreqseq-module"></span><h2>archerDX.core.mostFreqSeq module<a class="headerlink" href="#module-archerDX.core.mostFreqSeq" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-mostFreqSeq"></span><dl class="py function">
+<dt id="archerDX.core.mostFreqSeq.mostFreqSeqMain">
+<code class="sig-prename descclassname">archerDX.core.mostFreqSeq.</code><code class="sig-name descname">mostFreqSeqMain</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datapaths</span></em>, <em class="sig-param"><span class="n">test</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.mostFreqSeq.mostFreqSeqMain" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>Solves Part 2 of the project presented by Archer DX</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>datapaths (str): string with the location of the data intended to be processed in regards to part 1</p></li>
+<li><p>test (bool) (optional): If running the test suite, then denies print out of results. Also toggles different nameing schema for output file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.mostFreqSeq.printOutResults">
+<code class="sig-prename descclassname">archerDX.core.mostFreqSeq.</code><code class="sig-name descname">printOutResults</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fastaDict</span></em>, <em class="sig-param"><span class="n">topTenSeq</span></em>, <em class="sig-param"><span class="n">test</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.mostFreqSeq.printOutResults" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>Provides some style and prints out the provided dictonary</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>topTenSeq</strong> (<em>dict</em>) – Filtered dictonary with the top ten most common sequences in key/value format</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.mostFreqSeq.processFastaToDict">
+<code class="sig-prename descclassname">archerDX.core.mostFreqSeq.</code><code class="sig-name descname">processFastaToDict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">datapaths</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.mostFreqSeq.processFastaToDict" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>Reads in the provided fasta file and returns a dictonary with the sequnce as key and the frequency as the value</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fastaFile</strong> (<em>df</em>) – the fasta dataframe with Header/Sequence</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dict: a dictonary with the sequnce as key and the frequency as the value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.core.mostFreqSeq.sortFastaDic">
+<code class="sig-prename descclassname">archerDX.core.mostFreqSeq.</code><code class="sig-name descname">sortFastaDic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fastaDict</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.core.mostFreqSeq.sortFastaDic" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><p>Sorts the dictonary provided and returns the top ten results</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fastaDict</strong> (<em>dict</em>) – Key/value pair with the key being a sequence and the value being the frequency count</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>dict: a filtered dict with only the top ten values</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-archerDX.core">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-archerDX.core" title="Permalink to this headline">¶</a></h2>
+<p>Imports for the Core modules</p>
+<ul class="simple">
+<li><p><strong>Part 1</strong> | <em>(coordinateAnnotationPairer)</em> : Recursively find all FASTQ files in a directory and report each file name and the percent of sequences in that file that are greater than 30 nucleotides long.</p></li>
+<li><p><strong>Part 2</strong> | <em>(fastqSeqOver30)</em> : Given a FASTA file with DNA sequences, find 10 most frequent sequences and return the sequence and their counts in the file.</p></li>
+<li><p><strong>Part 3</strong> | <em>(mostFreqSeq)</em> : Given a chromosome and coordinates, write a program for looking up its annotation. Keep in mind you’ll be doing this annotation millions of times.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="archerDX.testing.html" class="btn btn-neutral float-right" title="archerDX.testing package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="archerDX.html" class="btn btn-neutral float-left" title="archerDX package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Hahn, Kody Richardson, Dalen Healy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

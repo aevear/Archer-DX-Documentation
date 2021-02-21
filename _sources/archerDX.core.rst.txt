@@ -1,0 +1,37 @@
+archerDX.core package
+=====================
+
+Submodules
+----------
+
+archerDX.core.coordinateAnnotationPairer module
+-----------------------------------------------
+
+.. automodule:: archerDX.core.coordinateAnnotationPairer
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+archerDX.core.fastqSeqOver30 module
+-----------------------------------
+
+.. automodule:: archerDX.core.fastqSeqOver30
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+archerDX.core.mostFreqSeq module
+--------------------------------
+
+.. automodule:: archerDX.core.mostFreqSeq
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: archerDX.core
+   :members:
+   :undoc-members:
+   :show-inheritance:

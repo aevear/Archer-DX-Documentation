@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>archerDX.utility package &mdash; Stonktastic 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="main module" href="main.html" />
+    <link rel="prev" title="archerDX.testing package" href="archerDX.testing.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Stonktastic
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="archerDX.html">archerDX package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archerDX.core.html">archerDX.core package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archerDX.testing.html">archerDX.testing package</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">archerDX.utility package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.utility.dataExport">archerDX.utility.dataExport module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.utility.dataImport">archerDX.utility.dataImport module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.utility.paths">archerDX.utility.paths module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-archerDX.utility">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="main.html">main module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="testingMain.html">testingMain module</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Stonktastic</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="archerDX.html">archerDX package</a> &raquo;</li>
+        
+      <li>archerDX.utility package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/archerDX.utility.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="archerdx-utility-package">
+<h1>archerDX.utility package<a class="headerlink" href="#archerdx-utility-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-archerDX.utility.dataExport">
+<span id="archerdx-utility-dataexport-module"></span><h2>archerDX.utility.dataExport module<a class="headerlink" href="#module-archerDX.utility.dataExport" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-dataExport"></span><dl class="py function">
+<dt id="archerDX.utility.dataExport.outputResults">
+<code class="sig-prename descclassname">archerDX.utility.dataExport.</code><code class="sig-name descname">outputResults</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">data</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.utility.dataExport.outputResults" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>exports the data with provided name to the results folder in tab delimited CSV format</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>-</em>) – name of the file that will be created</p></li>
+<li><p><strong>data</strong> (<em>-</em>) – results dataframe with the output for one of the other modules</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-archerDX.utility.dataImport">
+<span id="archerdx-utility-dataimport-module"></span><h2>archerDX.utility.dataImport module<a class="headerlink" href="#module-archerDX.utility.dataImport" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-dataImport"></span><dl class="py function">
+<dt id="archerDX.utility.dataImport.readInCoordinateData">
+<code class="sig-prename descclassname">archerDX.utility.dataImport.</code><code class="sig-name descname">readInCoordinateData</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathToCoordinateData</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.utility.dataImport.readInCoordinateData" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>Reads in <em>coordinated data</em> and returns a dataframe with the two fields provided as columns</p></li>
+<li><p>Format | chromosome t Position</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>pathToCoordinateData(path obj) : Path object with the location of the data being tested</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>dataframe: dataframe with only the chromosome value and location saved</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.utility.dataImport.readInFASTA">
+<code class="sig-prename descclassname">archerDX.utility.dataImport.</code><code class="sig-name descname">readInFASTA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathToFASTA</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.utility.dataImport.readInFASTA" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>Reads in a single fasta file, takes the important data and outputs the results as a dataframe</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>pathToFASTA(path obj) : Path object with the location of the data being tested</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>dataframe: dataframe with only the header and sequence saved</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.utility.dataImport.readInFASTQ">
+<code class="sig-prename descclassname">archerDX.utility.dataImport.</code><code class="sig-name descname">readInFASTQ</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathToFASTQ</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.utility.dataImport.readInFASTQ" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>Reads in FASTQ files recursively based on nested folders</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>pathToFASTQ(path obj) : Path object with the location of the data being tested</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>dataframe: dataframe with only the header, sequence and score saved</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.utility.dataImport.readInGTF">
+<code class="sig-prename descclassname">archerDX.utility.dataImport.</code><code class="sig-name descname">readInGTF</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">gtfPath</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.utility.dataImport.readInGTF" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>Reads in a full GTF file as a dataframe and returns that dataframe</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>gtfPath(path obj) : Path object with the location of the data being tested</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>dataframe: dataframe with all GTF headers provided</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="archerDX.utility.dataImport.readInGTFReducedInput">
+<code class="sig-prename descclassname">archerDX.utility.dataImport.</code><code class="sig-name descname">readInGTFReducedInput</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pathToGTF</span></em><span class="sig-paren">)</span><a class="headerlink" href="#archerDX.utility.dataImport.readInGTFReducedInput" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Description:</dt><dd><ul class="simple">
+<li><p>Reads in only the relevant fields from GTF into a dataframe and returns said dataframe</p></li>
+</ul>
+</dd>
+<dt>Args</dt><dd><ul class="simple">
+<li><p>gtfPath(path obj) : Path object with the location of the data being tested</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><ul class="simple">
+<li><p>dataframe: dataframe with chromosome value, start, end and the attributes of the gene</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-archerDX.utility.paths">
+<span id="archerdx-utility-paths-module"></span><h2>archerDX.utility.paths module<a class="headerlink" href="#module-archerDX.utility.paths" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="module-paths"></span><p><strong>Configuration Values</strong></p>
+</div>
+<div class="section" id="module-archerDX.utility">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-archerDX.utility" title="Permalink to this headline">¶</a></h2>
+<p>Imports modules for data exporting and importing as well as the paths for the project</p>
+<ul class="simple">
+<li><p><strong>Data Export</strong> : Single function used to export the results of the project to the <em>results</em> folder found in data</p></li>
+<li><p><strong>Data Import</strong> : Imports a variety of file types and with different specifications for some of them</p></li>
+<li><p><strong>Paths</strong> : Pathing used by the rest of the code. uses the pathlib module</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="main.html" class="btn btn-neutral float-right" title="main module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="archerDX.testing.html" class="btn btn-neutral float-left" title="archerDX.testing package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Alexander Hahn, Kody Richardson, Dalen Healy.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

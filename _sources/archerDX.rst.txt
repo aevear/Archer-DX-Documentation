@@ -1,0 +1,20 @@
+archerDX package
+================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   archerDX.core
+   archerDX.testing
+   archerDX.utility
+
+Module contents
+---------------
+
+.. automodule:: archerDX
+   :members:
+   :undoc-members:
+   :show-inheritance:

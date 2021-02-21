@@ -1,0 +1,29 @@
+Stonktastic Documentation
+======================================
+Stonktastic is a project combining three types of machine learning to perform stock predictions and display the results and statistic of the models in a readable way with *Flask*
+
+Written by : *Alexander Hahn, Kody Richardson and Dalen Healy*
+
+
+Project Notes
+----------------
+Project Overview: We used *Jupyter Notebooks* to record most of the project overview located
+
+Reports and Notes on the Project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Table of Contents
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. toctree::
+      :maxdepth: 2
+      :glob:
+
+      *
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
