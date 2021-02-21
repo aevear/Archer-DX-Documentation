@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Stonktastic Documentation &mdash; Stonktastic 1.0.0 documentation</title>
+  <title>Archer DX Interview Code Documentation &mdash; Stonktastic 1.0.0 documentation</title>
   
 
   
@@ -138,7 +138,7 @@
     
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Stonktastic Documentation</li>
+      <li>Archer DX Interview Code Documentation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -157,15 +157,81 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="stonktastic-documentation">
-<h1>Stonktastic Documentation<a class="headerlink" href="#stonktastic-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Stonktastic is a project combining three types of machine learning to perform stock predictions and display the results and statistic of the models in a readable way with <em>Flask</em></p>
-<p>Written by : <em>Alexander Hahn, Kody Richardson and Dalen Healy</em></p>
+  <div class="section" id="archer-dx-interview-code-documentation">
+<h1>Archer DX Interview Code Documentation<a class="headerlink" href="#archer-dx-interview-code-documentation" title="Permalink to this headline">¶</a></h1>
+<p>The interview process with Archer DX required that I solve <em>three</em> technical problems to measure my skill and coding style.</p>
+<p>The problems provided are listed below:</p>
+<div class="section" id="problem-1">
+<h2>Problem 1 :<a class="headerlink" href="#problem-1" title="Permalink to this headline">¶</a></h2>
+<p>Recursively find all FASTQ files in a directory and report each file name and the percent of sequences in that file that are greater than 30 nucleotides long.</p>
+</div>
+<div class="section" id="problem-2">
+<h2>Problem 2 :<a class="headerlink" href="#problem-2" title="Permalink to this headline">¶</a></h2>
+<p>Given a FASTA file with DNA sequences, find 10 most frequent sequences and return the sequence and their counts in the file.</p>
+</div>
+<div class="section" id="problem-3">
+<h2>Problem 3 :<a class="headerlink" href="#problem-3" title="Permalink to this headline">¶</a></h2>
+<p>Given a chromosome and coordinates, write a program for looking up its annotation.  Keep in mind you’ll be doing this annotation millions of times.</p>
+<dl class="simple">
+<dt><strong>Input</strong>:</dt><dd><ul class="simple">
+<li><p>Tab-delimited file: Chr&lt;tab&gt;Position</p></li>
+<li><p>GTF formatted file with genome annotations.</p></li>
+</ul>
+</dd>
+<dt><strong>Output</strong>:</dt><dd><ul class="simple">
+<li><p>Annotated file of gene name that input position overlaps.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
 <div class="section" id="project-notes">
-<h2>Project Notes<a class="headerlink" href="#project-notes" title="Permalink to this headline">¶</a></h2>
-<p>Project Overview: We used <em>Jupyter Notebooks</em> to record most of the project overview located</p>
-<div class="section" id="reports-and-notes-on-the-project">
-<h3>Reports and Notes on the Project<a class="headerlink" href="#reports-and-notes-on-the-project" title="Permalink to this headline">¶</a></h3>
+<h1>Project Notes<a class="headerlink" href="#project-notes" title="Permalink to this headline">¶</a></h1>
+<p>I have solved the problem it two seperate ways.</p>
+<div class="section" id="solution-1">
+<h2>Solution 1 :<a class="headerlink" href="#solution-1" title="Permalink to this headline">¶</a></h2>
+<p>Set in the <em>basicProject</em> folder we have three scripts to solve each problem (labeled <em>Part1</em>, <em>Part2</em> and <em>Part2</em> respectively) as well as a results file for part 3 and a sample file containin the information presented from Archer.</p>
+<p>This is intended to be the <em>most direct</em> and simple solution to the problem, the bare minimum that was asked. There are no external libraries used (aside from default python ones) aside from task three which uses pandas to load and manipulate the data.</p>
+</div>
+<div class="section" id="solution-2">
+<h2>Solution 2 :<a class="headerlink" href="#solution-2" title="Permalink to this headline">¶</a></h2>
+<p>As detailed in the <em>fullProject</em> folder we have a large scaled version of the project that was turned into a library and simulated what a full project might look like.</p>
+<div class="section" id="data">
+<h3>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h3>
+<p>Folder containing <em>providedData</em>, <em>results</em>, <em>testData</em> and <em>uploadedData</em>.</p>
+<ul class="simple">
+<li><p><em>providedData</em>: Datasets provided by Archer, used as the default set</p></li>
+<li><p><em>Results</em>: the CSV files that store the results of any operation</p></li>
+<li><p><em>testData</em>: contains the testing data and testing keys</p></li>
+<li><p><em>uploadedData</em>: where data uploaded within the Flask app is stored</p></li>
+</ul>
+</div>
+<div class="section" id="docs">
+<h3>Docs<a class="headerlink" href="#docs" title="Permalink to this headline">¶</a></h3>
+<p>Contains the documentation information used by <em>Sphnix</em> to autogenerate most of the documentation from the source material.</p>
+</div>
+<div class="section" id="flask">
+<h3>Flask<a class="headerlink" href="#flask" title="Permalink to this headline">¶</a></h3>
+<p>The flask component of the project that provides a front end GUI to run all three parts of the code. <em>Uses a flask template from Appseed</em></p>
+</div>
+<div class="section" id="notebook">
+<h3>Notebook<a class="headerlink" href="#notebook" title="Permalink to this headline">¶</a></h3>
+<p>Where <em>Jupyter Notebooks</em> are stored. Currently only contains the optimization notebook used to explore options in part 3.</p>
+</div>
+<div class="section" id="setup-cfg-and-setup-py">
+<h3>setup.cfg and setup.py<a class="headerlink" href="#setup-cfg-and-setup-py" title="Permalink to this headline">¶</a></h3>
+<p>Used to convert this pseudo-library to a local install, allowing it to be called and used in the same way a library is even during development.</p>
+</div>
+<div class="section" id="src">
+<h3>src<a class="headerlink" href="#src" title="Permalink to this headline">¶</a></h3>
+<p>The actual source repository for the code. The rest of the documentation explores this category. There are three main parts</p>
+<ul class="simple">
+<li><p><em>main.py</em> : main entry point for the library, has set options to run parts and provide paths to new data sets.</p></li>
+<li><p><em>testingMain.py</em> : main entry point for testing, provides a framework to verify that the code is working as intended during development</p></li>
+<li><p><em>core</em> : contains the three problems presented by Archer</p></li>
+<li><p><em>testing</em> : the testing code and framework to validate processes are running correctly.</p></li>
+<li><p><em>utility</em> : provides support for the rest of the code with <em>paths</em> and data <em>importing and exporting</em>.</p></li>
+</ul>
 </div>
 <div class="section" id="table-of-contents">
 <h3>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h3>
